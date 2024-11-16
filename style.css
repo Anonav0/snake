@@ -1,4 +1,61 @@
-#gameCanvas {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Antic Slab";
+  color: #343a40;
+  border-bottom: 10px solid #087f5b;
+}
+
+.container {
+  height: 100vh;
+  max-width: 120rem;
+  margin: 10rem auto;
+  padding: 9.6rem 0;
+
+  display: flex;
+  gap: 3.4rem;
+  justify-content: space-between;
+}
+
+.section-game {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  font-size: 9.8rem;
+}
+
+.game {
+  width: 30rem;
+  height: 30rem;
+}
+
+.section-controls {
+  width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 9.6rem;
+}
+
+/* #gameCanvas {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9,4 +66,4 @@
   text-align: center;
   font-size: 140px;
   font-family: "Antic Slab", serif;
-}
+} */

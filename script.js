@@ -33,7 +33,7 @@ let dy = 0;
 // CANVAS FUNCTIONS
 
 // Get the canvas element
-const gameCanvas = document.getElementById("gameCanvas");
+const gameCanvas = document.querySelector(".gameCanvas");
 // Return a two dimensional drawing context
 const ctx = gameCanvas.getContext("2d");
 
@@ -98,7 +98,7 @@ function advanceSnake() {
     // Increase score
     score += 10;
     // Display score on screen
-    document.getElementById("score").innerHTML = score;
+    document.querySelector(".score").innerHTML = score;
 
     // Generate new food location
     createFood();
